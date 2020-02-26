@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 import re
 import io
-import server.enums.premierleagueenum as ple
+import flaskai.enums.premierleagueenum as ple
 
 
 class ReadExcelWriteCsv:
@@ -11,8 +11,6 @@ class ReadExcelWriteCsv:
         liverpool_data = 'excel_data/' + from_excel
         xl = pd.ExcelFile(liverpool_data)
         df1 = xl.parse('Sheet1')
-
-        print(df1)
 
         with io.open('csv_data/' + to_csv, 'w', encoding="utf-8") as f:
             writer = csv.writer(f)
@@ -33,11 +31,18 @@ class ReadExcelWriteCsv:
                     row['Result'] = 'd'
                 writer.writerow(row)
 
-        print("Premier League loaded sucessfully into csv files")
-
     def load_premier_league(self):
         for name in ple.PremierLeague:
             self.__write_csv_info(name.value, name.name)
+            self.__eliminate_white_spaces(name.name, name.name)
+        print("Premier League loaded sucessfully into csv files")
+
+    def __eliminate_white_spaces(self, in_file, out_file):
+        with open('csv_data/' + in_file, 'r', encoding='utf-8') as inFile, \
+                open('csv_data/' + out_file + '.txt', 'w', encoding='utf-8') as outFile:
+            for line in inFile:
+                if line.strip():
+                    outFile.write(line)
 
 
 repo = ReadExcelWriteCsv()
