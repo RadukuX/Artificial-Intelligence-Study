@@ -22,3 +22,7 @@ class PremierLeague(enum.Enum):
     watford_info = 'Watford Results.xlsx'
     west_ham_info = 'West Ham United Results.xlsx'
     wolves_info = 'Wolverhampton Wanderers Results.xlsx'
+
+
+class PremierLeagueExtra(enum.Enum):
+    Liverpool = 'Extra Data Liverpool.xlsx'

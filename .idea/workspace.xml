@@ -2,55 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb9abe9c-796c-4169-9372-ae98773c9f04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Artificial Intelligence Study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Artificial Intelligence Study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/arsenal_info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/aston_villa_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/aston_villa_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/bournemouth_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/bournemouth_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/brighton_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/brighton_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/burnley_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/burnley_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/chelsea_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/chelsea_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/crystal_palace_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/crystal_palace_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/everton_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/everton_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/leicester_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/leicester_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/liverpool_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/liverpool_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/manchester_city_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/manchester_city_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/manchester_utd_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/manchester_utd_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/newcastle_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/newcastle_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/norwich_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/norwich_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/sheffield_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/sheffield_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/southampton_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/southampton_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/tottenham_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/tottenham_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/watford_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/watford_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/west_ham_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/west_ham_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/csv_data/wolves_info" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/csv_data/wolves_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/enums/premierleagueenum.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/enums/premierleagueenum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Arsenal Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Arsenal Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Aston Villa Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Aston Villa Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Bournemouth Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Bournemouth Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Brighton &amp; Hove Albion Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Brighton &amp; Hove Albion Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Burnley Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Burnley Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Chelsea Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Chelsea Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Crystal Palace Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Crystal Palace Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Everton Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Everton Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Leicester City Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Leicester City Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Liverpool Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Liverpool Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Manchester City Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Manchester City Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Manchester United Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Manchester United Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Newcastle United Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Newcastle United Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Norwich Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Norwich Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Sheffield United Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Sheffield United Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Southampton Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Southampton Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Tottenham Hotspur Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Tottenham Hotspur Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Watford Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Watford Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/West Ham United Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/West Ham United Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/excel_data/Wolverhampton Wanderers Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Wolverhampton Wanderers Results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/readexcelwritecsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/readexcelwritecsv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/arsenal_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/aston_villa_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/bournemouth_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/brighton_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/burnley_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/chelsea_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/crystal_palace_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/everton_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/leicester_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/liverpool_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/manchester_city_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/manchester_utd_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/newcastle_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/norwich_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/sheffield_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/southampton_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/tottenham_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/watford_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/west_ham_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/wolves_info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/enums/premierleagueenum.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/enums/premierleagueenum.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/excel_data/Aston Villa Results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/excel_data/Aston Villa Results.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/readexcelwritecsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/readexcelwritecsv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/repository/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/test.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -84,22 +66,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Artificial Intelligence Study\flaskai\forms" />
+      <recent name="D:\Artificial Intelligence Study\flaskai" />
+      <recent name="D:\Artificial Intelligence Study\flaskai\templates" />
+      <recent name="D:\Artificial Intelligence Study\flaskai\repository" />
+      <recent name="D:\Artificial Intelligence Study\app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Artificial Intelligence Study\data" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Artificial Intelligence Study\flaskai\repository" />
-      <recent name="D:\Artificial Intelligence Study\app" />
-      <recent name="D:\Artificial Intelligence Study\app\server" />
-      <recent name="D:\Artificial Intelligence Study\app\client" />
-      <recent name="D:\Artificial Intelligence Study" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.repository">
-    <configuration name="db_connection (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.run">
+    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Artificial Intelligence Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +93,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/repository/db_connection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/repository/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Artificial Intelligence Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,27 +144,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="readexcelwritecsv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Artificial Intelligence Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/readexcelwritecsv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="repository" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Artificial Intelligence Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="results" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Artificial Intelligence Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,11 +173,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/models" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/models/results.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,19 +187,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.results" />
-      <item itemvalue="Python.repository" />
-      <item itemvalue="Python.readexcelwritecsv" />
-      <item itemvalue="Python.db_connection (1)" />
+      <item itemvalue="Python.__init__" />
       <item itemvalue="Python.models" />
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.__init__ (1)" />
+      <item itemvalue="Python.repository" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
         <item itemvalue="Python.repository" />
         <item itemvalue="Python.models" />
-        <item itemvalue="Python.db_connection (1)" />
-        <item itemvalue="Python.readexcelwritecsv" />
-        <item itemvalue="Python.results" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.__init__ (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -251,54 +233,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="858" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582568098381" />
-    <state width="1899" height="280" key="GridCell.Tab.0.bottom" timestamp="1582744040846">
+    <state width="936" height="346" key="GridCell.Tab.0.bottom" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582744040846" />
-    <state width="1899" height="280" key="GridCell.Tab.0.center" timestamp="1582744040846">
+    <state width="936" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583345519305" />
+    <state width="936" height="346" key="GridCell.Tab.0.center" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582744040846" />
-    <state width="1899" height="280" key="GridCell.Tab.0.left" timestamp="1582744040846">
+    <state width="936" height="346" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583345519305" />
+    <state width="936" height="346" key="GridCell.Tab.0.left" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582744040846" />
-    <state width="1899" height="280" key="GridCell.Tab.0.right" timestamp="1582744040846">
+    <state width="936" height="346" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583345519305" />
+    <state width="936" height="346" key="GridCell.Tab.0.right" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582744040846" />
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1582735319771">
+    <state width="936" height="346" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583345519305" />
+    <state width="936" height="346" key="GridCell.Tab.1.bottom" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582735319771" />
-    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1582735319770">
+    <state width="936" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583345519305" />
+    <state width="936" height="346" key="GridCell.Tab.1.center" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582735319770" />
-    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1582735319770">
+    <state width="936" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583345519305" />
+    <state width="936" height="346" key="GridCell.Tab.1.left" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582735319770" />
-    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1582735319771">
+    <state width="936" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583345519305" />
+    <state width="936" height="346" key="GridCell.Tab.1.right" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582735319771" />
-    <state x="759" y="157" key="SettingsEditor" timestamp="1582616561833">
+    <state width="936" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583345519305" />
+    <state x="739" y="158" key="SettingsEditor" timestamp="1583338696151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582616561833" />
-    <state x="661" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582694694031">
+    <state x="739" y="158" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583338696151" />
+    <state x="496" y="344" width="609" height="347" key="com.intellij.ide.util.TipDialog" timestamp="1583333037783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="661" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582694694031" />
+    <state x="496" y="344" width="609" height="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583333037783" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582158934417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582158934417" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582618160257">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1583343541351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582618160257" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583343541351" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

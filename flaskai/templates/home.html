@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Home Page</h1>
+    The best site that ever existed
+
+    {% for post in posts %}
+        <h1>{{ post.team }}</h1>
+        <p>Goals : {{ post.goals }} </p>
+    {% endfor %}
+
+{% endblock content %}

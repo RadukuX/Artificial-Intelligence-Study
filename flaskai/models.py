@@ -23,6 +23,7 @@ class Team(db.Model):
     team_id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     results = db.relationship('Results', backref='team', lazy=True)
+    extra = db.relationship('ExtraData', backref='team', lazy=True)
 
     def __repr__(self):
         return 'Team:{' % self.name % '}'
@@ -38,4 +39,22 @@ class Results(db.Model):
     team_id = db.Column(db.Integer, db.ForeignKey('team.team_id'), nullable=False)
 
     def __repr__(self):
-        return 'Results:{' % self.date % ',' % self.time % ',' % self.oponent % ',' % self.score % ',' % self.result % ',' % self.team_id % '} '
+        return 'Results:{' % self.date % ',' % self.time % ',' % self.oponent % ',' % self.score % ',' % self.result % \
+               ',' % self.team_id % '} '
+
+
+class ExtraData(db.Model):
+    extra_data_id = db.Column(db.Integer, primary_key=True)
+    year = db.Column(db.String(20), nullable=False)
+    investment = db.Column(db.String(20), nullable=False)
+    age = db.Column(db.Integer, nullable=False)
+    wins = db.Column(db.Integer, nullable=False)
+    draws = db.Column(db.Integer, nullable=False)
+    defeats = db.Column(db.Integer, nullable=False)
+    goals = db.Column(db.Integer, nullable=False)
+    place = db.Column(db.Integer, nullable=False)
+    team_id = db.Column(db.Integer, db.ForeignKey('team.team_id'), nullable=False)
+
+    def __repr__(self):
+        return 'Extra Data: {' % self.year % ',' % self.investment % ',' % self.age % ',' % self.wins % ',' \
+               % self.draws % ',' % self.defeats % ',' % self.goals % ',' % self.place % '}'

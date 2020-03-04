@@ -1,6 +1,7 @@
 from flaskai.repository.db_connection import DbConnection
 import csv
 from flaskai.enums.premierleagueenum import PremierLeague
+import unicodedata
 
 
 class Repository:
@@ -8,6 +9,7 @@ class Repository:
                           'crystal_palace': 7, 'everton': 8, 'leicester': 9, 'liverpool': 10, 'manchester_city': 11,
                           'manchester_utd': 12, 'newcastle': 13, 'norwich': 14, 'sheffield': 15, 'southampton': 16,
                           'tottenham': 17, 'watford': 18, 'west_ham': 19, 'wolves': 20}
+    database = r'D:\Artificial Intelligence Study\flaskai\test.db'
 
     def __read_from_csv(self, file_name):
         result_dict = {'Date': '', 'Time': '', 'Oponent': '', 'Score': '', 'Result': '', 'team_id': ''}
@@ -41,16 +43,14 @@ class Repository:
         return cur.lastrowid
 
     def load_teams(self):
-        database = r'D:\Artificial Intelligence Study\flaskai\test.db'
-        conn = DbConnection().create_connection(database)
+        conn = DbConnection().create_connection(self.database)
         with conn:
             for team in PremierLeague:
                 team_name = team.name.replace("_info", "")
                 self.create_teams(conn, team_name)
 
     def load_results(self):
-        database = r'D:\Artificial Intelligence Study\flaskai\test.db'
-        conn = DbConnection().create_connection(database)
+        conn = DbConnection().create_connection(self.database)
         with conn:
             for teams in PremierLeague:
                 for result in self.__read_from_csv(teams.name):
@@ -63,15 +63,35 @@ class Repository:
         self.load_results()
 
     def register_user(self, username, email, password):
-        database = r'D:\Artificial Intelligence Study\flaskai\test.db'
-        conn = DbConnection().create_connection(database)
+        conn = DbConnection().create_connection(self.database)
         sql = ''' INSERT INTO user(username, email, password) VALUES (?,?,?)'''
         with conn:
-            cur = conn.cursor()
-            print('The user ' + username + ' is registering...')
-            cur.execute(sql, [username, email, password])
-            return cur.lastrowid
+            cursor = conn.cursor()
+            cursor.execute(sql, [username, email, password])
+            return cursor.lastrowid
+
+    def get_all_teams(self):
+        conn = DbConnection().create_connection(self.database)
+        sql = ''' SELECT * FROM team '''
+        with conn:
+            cursor = conn.cursor()
+            cursor.execute(sql, [])
+            all_teams = cursor.fetchall()
+            return all_teams
+
+    def get_team_result(self, team_id):
+        conn = DbConnection().create_connection(self.database)
+        sql = ''' SELECT * FROM results WHERE team_id = ? '''
+        with conn:
+            cursor = conn.cursor()
+            cursor.execute(sql, [team_id])
+            all_teams_encoded = []
+            for i, row in enumerate(cursor):
+                t = (row[0], row[1], row[2], row[3], row[4], row[5])
+                all_teams_encoded.append(t)
+            return all_teams_encoded
 
 
 repo = Repository()
-repo.register_user('bla', 'email', '123')
+print(repo.get_all_teams())
+print(repo.get_team_result(5))
