@@ -9,7 +9,6 @@ class Repository:
                           'crystal_palace': 7, 'everton': 8, 'leicester': 9, 'liverpool': 10, 'manchester_city': 11,
                           'manchester_utd': 12, 'newcastle': 13, 'norwich': 14, 'sheffield': 15, 'southampton': 16,
                           'tottenham': 17, 'watford': 18, 'west_ham': 19, 'wolves': 20}
-    database = r'D:\Artificial Intelligence Study\flaskai\test.db'
 
     def __read_from_csv(self, file_name):
         result_dict = {'Date': '', 'Time': '', 'Oponent': '', 'Score': '', 'Result': '', 'team_id': ''}
@@ -43,14 +42,14 @@ class Repository:
         return cur.lastrowid
 
     def load_teams(self):
-        conn = DbConnection().create_connection(self.database)
+        conn = DbConnection().create_connection(DbConnection.database)
         with conn:
             for team in PremierLeague:
                 team_name = team.name.replace("_info", "")
                 self.create_teams(conn, team_name)
 
     def load_results(self):
-        conn = DbConnection().create_connection(self.database)
+        conn = DbConnection().create_connection(DbConnection.database)
         with conn:
             for teams in PremierLeague:
                 for result in self.__read_from_csv(teams.name):
@@ -62,16 +61,8 @@ class Repository:
         self.load_teams()
         self.load_results()
 
-    def register_user(self, username, email, password):
-        conn = DbConnection().create_connection(self.database)
-        sql = ''' INSERT INTO user(username, email, password) VALUES (?,?,?)'''
-        with conn:
-            cursor = conn.cursor()
-            cursor.execute(sql, [username, email, password])
-            return cursor.lastrowid
-
     def get_all_teams(self):
-        conn = DbConnection().create_connection(self.database)
+        conn = DbConnection().create_connection(DbConnection.database)
         sql = ''' SELECT * FROM team '''
         with conn:
             cursor = conn.cursor()
@@ -80,7 +71,7 @@ class Repository:
             return all_teams
 
     def get_team_result(self, team_id):
-        conn = DbConnection().create_connection(self.database)
+        conn = DbConnection().create_connection(DbConnection.database)
         sql = ''' SELECT * FROM results WHERE team_id = ? '''
         with conn:
             cursor = conn.cursor()

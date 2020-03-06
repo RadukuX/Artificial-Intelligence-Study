@@ -2,27 +2,63 @@
 
 {% block content %}
 
-    <div>
+    <div class="content-section">
         <form method="POST" action="">
             <!-- ADD IN FOR PROTECTION -->
             {{ form.hidden_tag() }}
-            <fieldset>
-                <legend>Join Today</legend>
-                <div>
-                    {{ form.username.label }}
-                    {{ form.username }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Join Today</legend>
+                <div class="form-group">
+                    {{ form.username.label(class="form-control-label") }}
+                        {% if form.username.errors %}
+                            {{ form.username(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for errors in form.username.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.username(class="form-control form-control-lg") }}
+                        {% endif %}
                 </div>
                 <div>
-                    {{ form.email.label }}
-                    {{ form.email }}
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                            {{ form.email(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for errors in form.email.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.email(class="form-control form-control-lg") }}
+                        {% endif %}
                 </div>
                 <div>
-                    {{ form.password.label }}
-                    {{ form.password }}
+                    {{ form.password.label(class="form-control-label") }}
+                    {% if form.password.errors %}
+                            {{ form.password(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for errors in form.password.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.password(class="form-control form-control-lg") }}
+                        {% endif %}
                 </div>
                 <div>
-                    {{ form.confirm_password.label }}
-                    {{ form.confirm_password }}
+                    {{ form.confirm_password.label(class="form-control-label") }}
+                    {% if form.confirm_password.errors %}
+                            {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for errors in form.confirm_password.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.confirm_password(class="form-control form-control-lg") }}
+                        {% endif %}
                 </div>
             </fieldset>
             <div>
@@ -35,5 +71,8 @@
             Already Have An Account?
             <a href="{{ url_for('login') }}"> Log In </a>
         </small>
+    </div>
+    <div>
+        <small> * username and password must be longer than 2 characters</small>
     </div>
 {% endblock content %}

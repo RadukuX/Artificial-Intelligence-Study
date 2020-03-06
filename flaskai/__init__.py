@@ -9,5 +9,5 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 
 db = SQLAlchemy(app)
 
-from flaskai import routes
+from flaskai.controller import routes
 from flaskai import models

@@ -3,6 +3,7 @@ from sqlite3 import Error
 
 
 class DbConnection:
+    database = r'D:\Artificial Intelligence Study\flaskai\test.db'
 
     def create_connection(self, db_file):
         conn = None
