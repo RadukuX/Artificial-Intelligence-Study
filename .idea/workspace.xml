@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb9abe9c-796c-4169-9372-ae98773c9f04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskai/controller/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/repository/db_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/db_connection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/repository/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/routes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/controller/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/controller/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/forms/RegistrationForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/forms/RegistrationForm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/repository/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/services/user_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/test.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,22 +212,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="858" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582568098381" />
-    <state width="936" height="276" key="GridCell.Tab.0.bottom" timestamp="1583450446872">
+    <state width="936" height="276" key="GridCell.Tab.0.bottom" timestamp="1583762557512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583450446872" />
-    <state width="936" height="276" key="GridCell.Tab.0.center" timestamp="1583450446872">
+    <state width="936" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583762557512" />
+    <state width="936" height="276" key="GridCell.Tab.0.center" timestamp="1583762557512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583450446872" />
-    <state width="936" height="276" key="GridCell.Tab.0.left" timestamp="1583450446872">
+    <state width="936" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583762557512" />
+    <state width="936" height="276" key="GridCell.Tab.0.left" timestamp="1583762557512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583450446872" />
-    <state width="936" height="276" key="GridCell.Tab.0.right" timestamp="1583450446872">
+    <state width="936" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583762557512" />
+    <state width="936" height="276" key="GridCell.Tab.0.right" timestamp="1583762557512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583450446872" />
+    <state width="936" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583762557512" />
     <state width="936" height="346" key="GridCell.Tab.1.bottom" timestamp="1583345519305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -249,10 +248,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="158" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583338696151" />
-    <state x="496" y="344" width="609" height="347" key="com.intellij.ide.util.TipDialog" timestamp="1583441363727">
+    <state x="496" y="344" width="609" height="347" key="com.intellij.ide.util.TipDialog" timestamp="1583743485738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="496" y="344" width="609" height="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583441363727" />
+    <state x="496" y="344" width="609" height="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583743485738" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582158934417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
