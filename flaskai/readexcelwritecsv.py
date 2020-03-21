@@ -48,7 +48,7 @@ class ReadExcelWriteCsv:
             self.__eliminate_white_spaces(name.name, name.name)
         print("Premier League loaded sucessfully into csv files")
 
-    def load_extra_data(self):
+    def load_data(self):
         for name in ple.PremierLeagueExtra:
             self.__write_csv_extra_data(name.value)
             self.__eliminate_white_spaces_extra(name.name, name.name)
@@ -70,6 +70,7 @@ class ReadExcelWriteCsv:
         os.remove(r"D:\Artificial Intelligence Study\flaskai\csv_data" + "\\" + in_file)
 
 
+
 repo = ReadExcelWriteCsv()
-repo.load_extra_data()
+repo.load_data()
 repo.load_premier_league()
