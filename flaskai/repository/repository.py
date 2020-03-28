@@ -54,20 +54,26 @@ class Repository:
         sql = ''' INSERT INTO results(date,time,opponent,score,result,team_id) VALUES (?,?,?,?,?,?)'''
         cursor = conn.cursor()
         cursor.execute(sql, result)
-        return cursor.lastrowid
+        cursor_lastrow = cursor.lastrowid
+        cursor.close()
+        return cursor_lastrow
 
     def create_teams(self, conn, team_name):
         sql = ''' INSERT INTO team(name) VALUES (?)'''
         cursor = conn.cursor()
         print(team_name)
         cursor.execute(sql, [team_name])
-        return cursor.lastrowid
+       cursor_lastrow = cursor.lastrowid
+        cursor.close()
+        return cursor_lastrow
 
     def create_extra_data(self, conn, result):
         sql = ''' INSERT INTO extra_data(year,investment,age,wins,draws,defeats,goals,place,team_id) VALUES (?,?,?,?,?,?,?,?,?) '''
         cursor = conn.cursor()
         cursor.execute(sql, result)
-        return cursor.lastrowid
+        cursor_lastrow = cursor.lastrowid
+        cursor.close()
+        return cursor_lastrow
 
     def load_teams(self):
         conn = DbConnection().create_connection(DbConnection.database)
@@ -104,6 +110,7 @@ class Repository:
             cursor = conn.cursor()
             cursor.execute(sql, [])
             all_teams = cursor.fetchall()
+            cursor.close()
             return all_teams
 
     def get_team_result(self, team_id):
@@ -116,6 +123,7 @@ class Repository:
             for i, row in enumerate(cursor):
                 t = [row[0], row[1], row[2], row[3], row[4], row[5]]
                 all_teams_encoded.append(t)
+            cursor.close()
             return np.asarray(all_teams_encoded)
 
     def get_results_for_a_specific_team(self, team_a_id, team_b):
@@ -128,6 +136,7 @@ class Repository:
             for i, row in enumerate(cursor):
                 t = [row[0], row[1], row[2], row[3], row[4], row[5]]
                 all_teams.append(t)
+            cursor.close()
             return np.asarray(all_teams)
 
     def get_extra_data(self, team_id):
@@ -147,6 +156,7 @@ class Repository:
                 place = int(row[8])
                 t = [investments, age, wins, equals, defeats, goals, place]
                 all_data.append(t)
+            cursor.close()
             return np.asarray(all_data)
 
     def get_wins_equals_defeats(self, my_team, oponent):
@@ -177,6 +187,9 @@ class Repository:
         data.append(nr_of_wins)
         data.append(nr_of_equals)
         data.append(nr_of_defeats)
+        cursor1.close()
+        cursor2.close()
+        cursor3.close()
         return data
 
     def get_data(self, my_team, oponent):
@@ -202,6 +215,7 @@ class Repository:
             data.append(total_of_goals_given)
             data.append(total_of_goals_take)
             data.extend(self.get_wins_equals_defeats(my_team, oponent))
+            cursor.close()
             # goals_given goals_taken nr_of_wins nr_of_equals nr_of_defeats
             return data
 
@@ -219,6 +233,7 @@ class Repository:
                 li.append(score[1])
                 li.append(row[1])
                 score_result.append(li)
+            cursor.close()
             return score_result
 
 

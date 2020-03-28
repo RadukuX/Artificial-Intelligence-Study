@@ -3,12 +3,12 @@
 {% block content %}
 
     <div class="content-section">
-        <form method="POST" action="">
+        <form method="GET" action="">
             <!-- ADD IN FOR PROTECTION -->
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Join Today</legend>
-                <div class="form-group">
+                <legend class="border-bottom mb-4" style="color: white;">Join Today</legend>
+                <div class="form-group" style="color: white;">
                     {{ form.username.label(class="form-control-label") }}
                         {% if form.username.errors %}
                             {{ form.username(class="form-control form-control-lg is-invalid") }}
@@ -21,7 +21,7 @@
                             {{ form.username(class="form-control form-control-lg") }}
                         {% endif %}
                 </div>
-                <div>
+                <div style="color: white;">
                     {{ form.email.label(class="form-control-label") }}
                     {% if form.email.errors %}
                             {{ form.email(class="form-control form-control-lg is-invalid") }}
@@ -34,7 +34,7 @@
                             {{ form.email(class="form-control form-control-lg") }}
                         {% endif %}
                 </div>
-                <div>
+                <div style="color: white;">
                     {{ form.password.label(class="form-control-label") }}
                     {% if form.password.errors %}
                             {{ form.password(class="form-control form-control-lg is-invalid") }}
@@ -47,7 +47,7 @@
                             {{ form.password(class="form-control form-control-lg") }}
                         {% endif %}
                 </div>
-                <div>
+                <div style="color:white;">
                     {{ form.confirm_password.label(class="form-control-label") }}
                     {% if form.confirm_password.errors %}
                             {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
@@ -60,19 +60,47 @@
                             {{ form.confirm_password(class="form-control form-control-lg") }}
                         {% endif %}
                 </div>
+                <div class="select-box">
+                    <div class="list-group selected-teams" style=" display: inline-block; margin-left: 500px; margin-top: 350px;">
+                        <a style="color: white; font-size: large;"> Here you can see your selected teams.</a>
+                        <ul id="team_list" class="list_group"></ul>
+                    </div>
+                    <div style=" display: inline-block;">
+                        <select id="selectbox" multiple="multiple" class="select-content">
+                            <option id="opt-ars" value="Arsenal" class="option-image-arsenal selection-class"> </option>
+                            <option id="opt-aston" value="Aston-Villa" class="option-image-aston-villa selection-class" >  </option>
+                            <option id="opt-bourn" value="Bournemouth" class="option-image-bournemouth selection-class" > </option>
+                            <option id="opt-brigh" value="Brighton" class="option-image-brighton selection-class" >  </option>
+                            <option id="opt-burn" value="Burnley" class="option-image-burnley selection-class" >  </option>
+                            <option id="opt-che" value="Chelsea" class="option-image-chelsea selection-class" > </option>
+                            <option id="opt-cry" value="Crystal-Palace" class="option-image-crystal-palace selection-class" >  </option>
+                            <option id="opt-eve" value="Everton" class="option-image-everton selection-class" > </option>
+                            <option id="opt-lei" value="Leicester" class="option-image-leicester selection-class" >  </option>
+                            <option id="opt-liv" value="Liverpool" class="option-image-liverpool selection-class" >  </option>
+                            <option id="opt-man" value="Manchester-City" class="option-image-manchester-city selection-class" >  </option>
+                            <option id="opt-manu" value="Manchester-United" class="option-image-manchester-united selection-class" > </option>
+                            <option id="opt-new" value="Newcastle" class="option-image-newcastle selection-class" >  </option>
+                            <option id="opt-nor" value="Norwich" class="option-image-norwich selection-class" >  </option>
+                            <option id="opt-she" value="Sheffield" class="option-image-sheffield selection-class" > </option>
+                            <option id="opt-sou" value="Southampton" class="option-image-southampton selection-class" >  </option>
+                            <option id="opt-tot" value="Tottenham" class="option-image-tottenham selection-class" >  </option>
+                            <option id="opt-wat" value="Watford" class="option-image-watford selection-class" > </option>
+                            <option id="opt-wes" value="West-Ham" class="option-image-west-ham selection-class" >  </option>
+                            <option id="opt-wol" value="Wolves" class="option-image-wolves selection-class" >  </option>
+                        </select>
+                    </div>
+                </div>
             </fieldset>
-            <div>
-                {{ form.submit }}
-            </div>
+            <Button id="register-button" class="btn btn-primary">Register</Button>
         </form>
     </div>
     <div>
-        <small>
+        <small style="color: white;">
             Already Have An Account?
             <a href="{{ url_for('login') }}"> Log In </a>
         </small>
     </div>
     <div>
-        <small> * username and password must be longer than 2 characters</small>
+        <small style="color: white;"> * username and password must be longer than 2 characters</small>
     </div>
 {% endblock content %}

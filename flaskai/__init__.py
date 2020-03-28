@@ -2,8 +2,10 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
+from flask_restful import Resource, Api
 
 app = Flask(__name__)
+api = Api(app)
 
 app.config['SECRET_KEY'] = '5ca1bfa986e6d6ff51ec0b829f907794'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False

@@ -1,0 +1,187 @@
+.select-box
+{
+    width: 600px;
+    margin: 30px;
+}
+
+.select-content
+{
+    background-color: #37003D;
+}
+
+.option-image-arsenal
+{
+    background: url("resources/arsenal-select.png");
+    font-size: xx-large;
+    width: 171px;
+    height: 171px;
+    background-color: #37003D;
+}
+
+.option-image-aston-villa
+{
+    background: url("resources/aston-villa-select.png");
+    font-size: xx-large;
+    width: 171px;
+    height: 171px;
+}
+
+.option-image-burnley
+{
+    background: url("resources/burnley-select.png");
+    font-size: xx-large;
+    width: 171px;
+    height: 200px;
+}
+
+.option-image-chelsea
+{
+    background: url("resources/chelsea-select.png");
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+}
+
+.option-image-crystal-palace
+{
+    background: url("resources/crystal-palace-select.png");
+    font-size: xx-large;
+    width: 160px;
+    height: 199px;
+}
+
+.option-image-manchester-city
+{
+    background: url("resources/manchester-city-select.png");
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+}
+
+.option-image-manchester-united
+{
+    background: url("resources/manchester-united-select.png");
+    font-size: xx-large;
+    width: 194px;
+    height: 200px;
+}
+
+.option-image-tottenham
+{
+    background: url("resources/tottenham-select.png");
+    font-size: xx-large;
+    width: 97px;
+    height: 199px;
+}
+
+.option-image-wolves
+{
+    background: url("resources/wolves-select.png");
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+}
+
+.option-image-bournemouth
+{
+    background: url("resources/bournemouth-select.png");
+    font-size: xx-large;
+    width: 153px;
+    height: 200px;
+}
+
+.option-image-brighton
+{
+    background: url("resources/brighton-select.png");
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+}
+
+.option-image-everton 
+{
+    background: url("resources/everton-select.png");
+    font-size: xx-large;
+    width: 195px;
+    height: 200px;
+}
+
+.option-image-leicester
+{
+    background: url("resources/leicester-select.png");
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+}
+
+.option-image-liverpool
+{
+    background: url("resources/liverpool-select.png");
+    font-size: xx-large;
+    width: 147px;
+    height: 200px;
+}
+
+.option-image-newcastle
+{
+    background: url("resources/newcastle-select.png");
+    font-size: xx-large;
+    width: 199px;
+    height: 200px;
+}
+
+.option-image-norwich
+{
+    background: url("resources/norwich-select.png");
+    font-size: xx-large;
+    width: 179px;
+    height: 200px;
+}
+
+.option-image-sheffield
+{
+    background: url("resources/sheffield-select.png");
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+}
+
+.option-image-southampton
+{
+    background: url("resources/southampton-select.png");
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+}
+
+.option-image-watford
+{
+    background: url("resources/watford-select.png");
+    font-size: xx-large;
+    width: 178px;
+    height: 200px;
+}
+
+.option-image-west-ham
+{
+    background: url("resources/west-ham-select.png");
+    font-size: xx-large;
+    width: 180px;
+    height: 200px;
+}
+
+
+.selection-class
+{
+    font-size: xx-large;
+}
+
+.selected-teams
+{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    widows: 50px;
+}

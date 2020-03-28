@@ -1,8 +1,9 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-from flaskai.models import  User
-
+from flaskai.models import User
+from wtforms.fields import FieldList
+from wtforms.widgets import ListWidget
 
 class RegistrationForm(FlaskForm):
 
@@ -11,6 +12,7 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(),
                                                                      EqualTo('password')])
+    team_list = StringField('team_list', validators=[DataRequired()])
     submit = SubmitField('Register')
 
     def validate_username(self, username):

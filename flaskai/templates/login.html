@@ -2,26 +2,27 @@
 
 {% block content %}
 
+
   <div class="content-section">
         <form method="POST" action="">
             <!-- ADD IN FOR PROTECTION -->
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Log In</legend>
-                <div>
+                <legend class="border-bottom mb-4" style="color: white;">Log In</legend>
+                <div style="color: white;">
                     {{ form.email.label(class="form-control-label") }}
                     {% if form.email.errors %}
                             {{ form.email(class="form-control form-control-lg is-invalid") }}
                             <div class="invalid-feedback">
                                 {% for errors in form.email.errors %}
-                                    <span>{{ error }}</span>
+                                    <span style="color: white;">{{ error }}</span>
                                 {% endfor %}
                             </div>
                         {% else %}
                             {{ form.email(class="form-control form-control-lg") }}
                         {% endif %}
                 </div>
-                <div>
+                <div style="color: white;">
                     {{ form.password.label(class="form-control-label") }}
                     {% if form.password.errors %}
                             {{ form.password(class="form-control form-control-lg is-invalid") }}
@@ -34,21 +35,19 @@
                             {{ form.password(class="form-control form-control-lg") }}
                         {% endif %}
                 </div>
-                <div class="form-check">
+                <div class="form-check" style="color: white;">
                     {{ form.remember_me(class="form-check-input") }}
                     {{ form.remember_me.label(class="form-check-label") }}
                 </div>
             </fieldset>
-            <div>
-                {{ form.submit }}
-            </div>
-            <small class="text-muted">
+            <button class="btn btn-primary">Log in</button>
+            <small class="text-muted" style="color: white;">
                 <a href="#">Forgot Password?</a>
             </small>
         </form>
     </div>
     <div>
-        <small>
+        <small style="color: white;">
             You don't have an account?
             <a href="{{ url_for('register') }}"> Register here </a>
         </small>

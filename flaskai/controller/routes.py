@@ -1,36 +1,34 @@
 from flask import render_template, flash, redirect, url_for, request
-from flaskai import app
+from flaskai import app, api, Resource
 from flaskai.forms.LoginForm import LoginForm
 from flaskai.forms.RegistrationForm import RegistrationForm
 from flaskai.services.user_service import UserService
 from flask_login import login_user, current_user, logout_user, login_required
+from flaskai.services.linear_reg_alg_service import LinearRegService
+import json
 
-posts = [
-    {
-        'team': 'Liverpool',
-        'goals': '30'
-    },
-
-    {
-        'team': 'Chelsea',
-        'goals': '28'
-    }
-]
 
 user_service = UserService()
+linear_regression_service = LinearRegService()
 
 
 @app.route('/home')
 @login_required
 def home():
-    return render_template('home.html', posts=posts)
+    return render_template('home.html')
 
 
-@app.route('/register', methods=['GET', 'POST'])
-def register():
+@app.route('/register', methods=['GET','POST'])
+def register():   
     if current_user.is_authenticated:
         return redirect(url_for('home'))
     form = RegistrationForm()
+    result = request.data.decode('utf-8')
+    raw_result = result.split(":")
+    teams = raw_result[-1].replace('}', "").replace('[', "").replace(']',"").replace('"', "")
+    team_list = teams.split(',')
+    print(team_list)
+    print(type(team_list))
     if form.validate_on_submit():
         user_service.register_user(form.username.data, form.email.data, form.password.data)
         flash(f'Account created for {form.username.data}!', 'success')
@@ -60,3 +58,25 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
+
+class LinearRegressionController(Resource):
+
+    def get(self):
+        investments = request.json['investments']
+        med_age = request.json['med_age']
+        wins = request.json['wins']
+        equals = request.json['equals']
+        defeats = request.json['defeats']
+        goals = request.json['goals']
+        return linear_regression_service.lin_get_multiple_var(investments, med_age, wins, equals, defeats, goals)
+
+
+class DrawLinearRegression(Resource):
+
+    def get(self, variable):
+        return linear_regression_service.draw_linear_regression(variable)
+
+
+api.add_resource(LinearRegressionController, '/linear-regression')
+api.add_resource(DrawLinearRegression, '/draw-linear-regression/<string:variable>')

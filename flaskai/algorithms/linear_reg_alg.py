@@ -40,6 +40,3 @@ class LinearRegressionAlg:
         root.mainloop()
 
 
-a = LinearRegressionAlg()
-print(a.lin_get_multiple_var(1000000, 21, 3, 6, 29, 20))
-a.draw_linear_regression('Draws')

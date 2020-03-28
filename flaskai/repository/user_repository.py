@@ -5,13 +5,16 @@ from flask_bcrypt import Bcrypt
 
 class UserRepository:
 
-    def register_user(self, username, email, password):
+    def register_user(self, username, email, password, admin):
         conn = DbConnection().create_connection(DbConnection.database)
-        sql = ''' INSERT INTO user(username, email, password) VALUES (?,?,?)'''
+        sql = ''' INSERT INTO user(username, email, password, admin) VALUES (?,?,?,?)'''
+        sql1 = '''  '''
         with conn:
             cursor = conn.cursor()
-            cursor.execute(sql, [username, email, password])
-            return cursor.lastrowid
+            cursor.execute(sql, [username, email, password, admin])
+            cursor_last_row = cursor.lastrowid
+            cursor.close()
+            return cursor_last_row
 
     def __get_hashed_password(self, email):
         conn = DbConnection().create_connection(DbConnection.database)
@@ -19,7 +22,9 @@ class UserRepository:
         with conn:
             cursor = conn.cursor()
             cursor.execute(sql, [email])
-            return cursor.fetchall()[0][0]
+            cursor_fetch = cursor.fetchall()
+            cursor.close()
+            return cursor_fetch[0][0]
 
     def login_user(self, email, password):
         bcrypt = Bcrypt()
@@ -30,8 +35,11 @@ class UserRepository:
             with conn:
                 cursor = conn.cursor()
                 cursor.execute(sql, [email])
-                if not cursor.fetchall():
+                cursor_fetch = cursor.fetchall()
+                cursor.close()
+                if not cursor_fetch:
                     return [user, False]
                 return [user, True]
         else:
             return [user, False]
+
