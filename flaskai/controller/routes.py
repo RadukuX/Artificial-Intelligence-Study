@@ -18,41 +18,63 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/register', methods=['GET','POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def register():   
     if current_user.is_authenticated:
         return redirect(url_for('home'))
     form = RegistrationForm()
-    result = request.data.decode('utf-8')
-    raw_result = result.split(":")
-    teams = raw_result[-1].replace('}', "").replace('[', "").replace(']',"").replace('"', "")
-    team_list = teams.split(',')
-    print(team_list)
-    print(type(team_list))
     if form.validate_on_submit():
         user_service.register_user(form.username.data, form.email.data, form.password.data)
-        flash(f'Account created for {form.username.data}!', 'success')
-        return redirect(url_for('home'))
+        flash(f'Account created for {form.username.data}! Now choose your teams!', 'success')
+        return redirect(url_for('login')) 
     return render_template('register.html', title='Register', form=form)
 
-
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        if user_service.check_subscription(current_user.email):
+            return redirect(url_for('home'))
+        else:
+            return redirect(url_for('pick'))
     form = LoginForm()
     if form.validate_on_submit():
         if user_service.login_user(form.email.data, form.password.data)[1] is True:
+           # print(user_service)
+           # if user_service.check_subscription(form.email.data):
             user = user_service.login_user(form.email.data, form.password.data)[0]
             login_user(user, remember=form.remember_me.data)
             next_page = request.args.get('next')
             flash(f'Hello!', 'success')
-            return redirect(next_page) if next_page else redirect(url_for('home'))
+            if user_service.check_subscription(form.email.data):
+                return redirect(next_page) if next_page else redirect(url_for('home'))
+            else:
+                return redirect(url_for('pick'))
         else:
             flash(f'Login Unsuccessful. Please try again!', 'danger')
     return render_template('login.html', title='Login', form=form)
 
+@app.route('/team-picking', methods=['POST'])
+@login_required
+def team_picking():
+    result = request.data.decode('utf-8').replace("'", "\"")
+    print(request)
+    print(request.data)
+    raw_result = result.split(":")
+    teams = raw_result[-1].replace("}", "").replace("[", "").replace("]","").replace("\"","")
+    team_list = teams.split(',')
+    if team_list[0] == '':
+        team_list.remove(team_list[0])
+    if user_service.add_teams(list(team_list), current_user.email) is True:
+        flash(f'Login into your account !', 'success')
+        return 'ok'
+    else:
+        flash(f'You have to pick a team !', 'danger')
+        return 'error'
+
+@app.route('/pick', methods=['GET'])
+def pick():
+    return render_template('picks.html', title='Team Picking')
 
 @app.route('/logout')
 def logout():
