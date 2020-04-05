@@ -2,9 +2,26 @@
 
 {% block content %}
 
-    <h1>Home Page</h1>
-    The best site that ever existed
-
+    <h1 class='team-title'>Your Teams</h1>
+    <div class='row' style="width: 1500px;">
+        <div id="teams" class='team-title column' style="margin-right: 50px;" ></div>
+        <div id="infos" class='column table-teams-info'>
+            <h1 id="table_name" style="color: white;"></h1>
+            <table class="table table-hover" style="color: white;">
+                <thead>
+                    <th scope="col">Year</th>
+                    <th scope="col">Investments</th>
+                    <th scope="col">Medium Age</th>
+                    <th scope="col">Wins</th>
+                    <th scope="col">Draws</th>
+                    <th scope="col">Defeats</th>
+                    <th scope="col">Goals scored</th>
+                    <th scope="col">Place</th>
+                </thead>
+                <tbody id='table_body'></tbody>
+            </table>
+        </div>
+    </div>
     {% for post in posts %}
         <h1>{{ post.team }}</h1>
         <p>Goals : {{ post.goals }} </p>

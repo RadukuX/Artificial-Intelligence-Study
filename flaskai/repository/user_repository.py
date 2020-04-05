@@ -80,10 +80,14 @@ class UserRepository:
         user_id = self.__function_to_return_user_id(email)
         sql = ''' SELECT team_id FROM subscriptions WHERE user_id=? '''
         conn = DbConnection().create_connection(DbConnection.database)
+        result = []
         with conn:
             cursor = conn.cursor()
             cursor.execute(sql, [user_id])
-            result = cursor.fetchall()
-        return result
+            team_list = cursor.fetchall()
+            cursor.close()
+            for team in team_list:
+                result.append(team[0])
+            return result
 
-
+    

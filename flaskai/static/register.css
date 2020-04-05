@@ -1,11 +1,13 @@
 .select-box
 {
-    width: 600px;
+    width: 200px;
     margin: 30px;
+    margin-left: 0px;
 }
 
 .select-content
-{
+{   
+    width: 300px;
     background-color: #37003D;
 }
 
@@ -16,6 +18,7 @@
     width: 171px;
     height: 171px;
     background-color: #37003D;
+    text-align: right;
 }
 
 .option-image-aston-villa
@@ -184,4 +187,18 @@
     left: 0;
     right: 0;
     widows: 50px;
+}
+
+select optgroup
+{
+    text-align: left;
+    font-size: xx-large;
+    color:#fff;
+    font-style:normal;
+    font-weight:normal;
+}
+
+.button-pick
+{
+    margin-top: 70px;
 }

@@ -5,11 +5,13 @@ from flaskai.forms.RegistrationForm import RegistrationForm
 from flaskai.services.user_service import UserService
 from flask_login import login_user, current_user, logout_user, login_required
 from flaskai.services.linear_reg_alg_service import LinearRegService
+from flaskai.services.team_service import TeamService
 import json
 
 
 user_service = UserService()
 linear_regression_service = LinearRegService()
+team_service = TeamService()
 
 
 @app.route('/home')
@@ -29,7 +31,7 @@ def register():
         return redirect(url_for('login')) 
     return render_template('register.html', title='Register', form=form)
 
-@app.route('/')
+@app.route('/',  methods=['GET', 'POST'])
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
@@ -40,8 +42,6 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         if user_service.login_user(form.email.data, form.password.data)[1] is True:
-           # print(user_service)
-           # if user_service.check_subscription(form.email.data):
             user = user_service.login_user(form.email.data, form.password.data)[0]
             login_user(user, remember=form.remember_me.data)
             next_page = request.args.get('next')
@@ -66,10 +66,8 @@ def team_picking():
     if team_list[0] == '':
         team_list.remove(team_list[0])
     if user_service.add_teams(list(team_list), current_user.email) is True:
-        flash(f'Login into your account !', 'success')
         return 'ok'
     else:
-        flash(f'You have to pick a team !', 'danger')
         return 'error'
 
 @app.route('/pick', methods=['GET'])
@@ -80,6 +78,20 @@ def pick():
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
+
+@app.route('/get-your-teams', methods=['GET'])
+@login_required
+def get_your_teams():
+    team_list = user_service.get_your_teams(current_user.email)
+    json_team_list = {'teams':team_list}
+    return json_team_list
+
+@app.route('/get-info/<team_name>', methods=['GET'])
+@login_required
+def get_info(team_name):
+    return team_service.get_info(team_name)
+
 
 
 class LinearRegressionController(Resource):

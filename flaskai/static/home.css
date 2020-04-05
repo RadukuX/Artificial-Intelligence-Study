@@ -1,0 +1,30 @@
+.team-title
+{
+    color: white;
+    margin-bottom: 100px;
+    width: fit-content;
+}
+
+.team-name
+{
+    display: inline;
+    margin-right: 60px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.photo-css
+{
+    align-content: center;
+}
+
+.item-hover
+{
+    color: white;
+}
+
+.table-teams-info
+{
+    width: fit-content;
+    align-self: right;
+}

@@ -1,5 +1,4 @@
 import re
-
 from flaskai.repository.db_connection import DbConnection
 import csv
 import numpy as np
@@ -235,6 +234,4 @@ class Repository:
                 score_result.append(li)
             cursor.close()
             return score_result
-
-
 
