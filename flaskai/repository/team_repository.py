@@ -25,3 +25,22 @@ class TeamRepository:
                 counter = counter + 1
             cursor.close()
             return result
+
+    def get_team_name(self, team_id):
+        conn = DbConnection().create_connection(DbConnection.database)
+        sql = ''' SELECT name FROM team WHERE id=? '''
+        with conn:
+            cursor = conn.cursor()
+            cursor.execute(sql, [team_id])
+            name = cursor.fetchall()
+            cursor.close()
+            return name[0][0]
+    
+    def get_team_live(self, team_name, team_id):
+        conn = DbConnection().create_connection(DbConnection.database)
+        sql = ''' SELECT DISTINCT opponent FROM results WHERE opponent LIKE ? AND team_id=? LIMIT 1'''.format(team_name)
+        with conn:
+            cursor = conn.cursor()
+            cursor.execute(sql, [ '%' + team_name + '%', team_id])
+            nr_of_opponents = cursor.fetchall()
+            return nr_of_opponents

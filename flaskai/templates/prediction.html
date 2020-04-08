@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row">
+        <div id="title_team" class="column"></div>
+        <div id="opponent-team" class="column" ></div>
+    </div>
+
+    <div class="row">
+        <div class="md-form active-cyan active-cyan-2 mb-0 mt-2 ml-0 column" style="margin-left: 10px">
+            <input id="search-team" class="form-control" type="text" placeholder="Search opponent" aria-label="Search opponent" style="width: 300px;">
+        </div> 
+        <div class="column"> 
+            <button id="markov_button" class="btn btn-primary mt-2 ml-2" > Markov </button>
+            <button id="bayes_button" onclick="bayes()" class="btn btn-primary mt-2 ml-2" > Bayes </button>
+        </div>
+    </div>
+
+    <div id="options" class="row">
+        <div id="markov_chains_option" class="column" style="margin-top: 100px"></div>
+        <div id="bayes_clasifier_option" class="column"></div>
+    </div>
+
+{% endblock content %}

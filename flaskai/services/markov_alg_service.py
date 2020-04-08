@@ -5,10 +5,10 @@ class MarkovService:
 
     markov = MarkovAlg()
 
-    team_dictionary_pl = {'arsenal': 1, 'aston_villa': 2, 'bournemouth': 3, 'brighton': 4, 'burnley': 5, 'chelsea': 6,
-                          'crystal_palace': 7, 'everton': 8, 'leicester': 9, 'liverpool': 10, 'manchester_city': 11,
-                          'manchester_utd': 12, 'newcastle': 13, 'norwich': 14, 'sheffield': 15, 'southampton': 16,
-                          'tottenham': 17, 'watford': 18, 'west_ham': 19, 'wolves': 20}
+    team_dictionary_pl = {'Arsenal': 1, 'Aston-Villa': 2, 'Bournemouth': 3, 'Brighton': 4, 'Burnley': 5, 'Chelsea': 6,
+                          'Crystal-Palace': 7, 'Everton': 8, 'Leicester': 9, 'Liverpool': 10, 'Manchester-City': 11,
+                          'Manchester-Utd': 12, 'Newcastle': 13, 'Norwich': 14, 'Sheffield': 15, 'Southampton': 16,
+                          'Tottenham': 17, 'Watford': 18, 'West-Ham': 19, 'Wolves': 20}
 
     '''
         :returns wins, equals, defeats and the number of all the games 
@@ -29,4 +29,6 @@ class MarkovService:
     '''
     def markov_matrix(self, my_team, oponent_team):
         team_id = self.team_dictionary_pl.get(my_team)
+        print("asd "+str(team_id)+"das")
+        print(oponent_team)
         return self.markov.markov_matrix(team_id, oponent_team)

@@ -48,7 +48,7 @@ $(document).ready(function(){
         $.ajax({
             type: 'POST',
             url:'/team-picking',
-            data: JSON.stringify({result: send_result}),
+            data: JSON .stringify({result: send_result}),
             contentType: 'application/json;charset=UTF-8',
             success: function(response){
                 console.log(response)

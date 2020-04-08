@@ -6,14 +6,17 @@ $(document).ready(function(){
             console.log(response.teams)
             count = 1
             for(let team of response.teams){
-                var result = $('<div id=team' + count + ' class="team-name item-hover"/>').append(team)
+                var result = $('<div id=team' + count + ' class="team-name item-hover" />').append(team)
                 $('#teams').append(result).html()
                 var flagId = team.toLowerCase().replace(" ", "-")
+                var flagId2 = team.replace(" ", "-")
                 var photoId = "option-image-" + flagId
-                console.log(flagId)
+                console.log("Flag id = " + flagId)
                 console.log(photoId)
-                var photo = $('<div id='+ flagId +' onmouseover="test(this)" class="' + photoId + ' item-hover" />')
+                var photo = $('<div id='+ flagId2 +' onclick="predictionTitle(id)" onmouseover="showResults(this)" class="' + photoId + ' item-hover" />')
                 $('#team' + count).append(photo).html
+                //var predictionButton = $('<button style="display: flex; align-items: center, justify-content:center, margin-bottom:100px">Do a prediction</button>')
+                //$('#teams').append(predictionButton).html
                 count = count + 1
             }
         },
@@ -23,13 +26,14 @@ $(document).ready(function(){
     })
 })
 
-function test(id){
+function showResults(id){
+
     teamName = id.id
     event.preventDefault()
     event.stopPropagation()
     $.ajax({
         type: 'GET',
-        url: '/get-info/' + teamName,
+        url: '/get-info/' + teamName.toLowerCase(),
         success: function(response){
             var seasons = response
             var the_row
@@ -48,3 +52,32 @@ function test(id){
     })
 }
 
+//function prediction(){
+//    $.ajax({
+//        type: 'GET',
+  ///      url: '/prediction',
+  //      success: function(response){
+//
+//document.location.href = '/prediction'
+   //     },
+   //     error: function(error){
+   //         document.location.href = '/home'
+//        }
+  //  })
+//}
+
+function predictionTitle(id){
+    teamName = id
+    console.log('team name !!!' + teamName)
+    $.ajax({
+        type: 'GET',
+        url: '/prediction',
+        success: function(response){
+            localStorage.setItem('team-name', teamName)
+            document.location.href = '/prediction'
+        },
+        error: function(error){
+            console.log(error)
+        }
+    })
+}

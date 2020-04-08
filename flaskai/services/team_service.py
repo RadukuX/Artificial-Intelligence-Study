@@ -13,3 +13,11 @@ class TeamService:
     def get_info(self, team_name):
         team_id = self.team_dictionary_pl[team_name]
         return self.team_repo.get_info(team_id)
+    
+    def get_team_name(self, team_name):
+        team_id = self.team_dictionary_pl[team_name]
+        return self.team_repo.get_team_name(team_id)
+    
+    def get_team_live(self, team_name, opponent_team_name):
+        team_id = self.team_dictionary_pl[opponent_team_name]
+        return self.team_repo.get_team_live(team_name, team_id)

@@ -62,7 +62,7 @@ class Repository:
         cursor = conn.cursor()
         print(team_name)
         cursor.execute(sql, [team_name])
-       cursor_lastrow = cursor.lastrowid
+        cursor_lastrow = cursor.lastrowid
         cursor.close()
         return cursor_lastrow
 

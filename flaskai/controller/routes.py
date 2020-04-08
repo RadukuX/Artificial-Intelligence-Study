@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, jsonify
 from flaskai import app, api, Resource
 from flaskai.forms.LoginForm import LoginForm
 from flaskai.forms.RegistrationForm import RegistrationForm
@@ -7,11 +7,14 @@ from flask_login import login_user, current_user, logout_user, login_required
 from flaskai.services.linear_reg_alg_service import LinearRegService
 from flaskai.services.team_service import TeamService
 import json
-
+from flaskai.services.markov_alg_service import MarkovService
+from flaskai.services.naive_bayes_service import NaiveBayesService
 
 user_service = UserService()
 linear_regression_service = LinearRegService()
 team_service = TeamService()
+markov_service = MarkovService()
+naive_service = NaiveBayesService()
 
 
 @app.route('/home')
@@ -79,7 +82,6 @@ def logout():
     logout_user()
     return redirect(url_for('login'))
 
-
 @app.route('/get-your-teams', methods=['GET'])
 @login_required
 def get_your_teams():
@@ -92,6 +94,76 @@ def get_your_teams():
 def get_info(team_name):
     return team_service.get_info(team_name)
 
+@app.route('/prediction/<team_name>', methods=['GET'])
+@login_required
+def get_prediction_html(team_name):
+    return team_service.get_team_name(team_name)
+
+@app.route('/prediction', methods=['GET'])
+@login_required
+def get_prediction():
+    return render_template('prediction.html', title='Predictions')
+
+@app.route('/livesearch', methods=['POST'])
+@login_required
+def search_team_live():
+    opponent = request.form.get('opponent') 
+    team_id = request.form.get('myTeam')
+    print(opponent)
+    print(team_id)
+    return jsonify(team_service.get_team_live(opponent, team_id))
+
+
+# Algorithm routes
+
+# Markov
+@app.route('/markov/informations', methods=['POST'])
+@login_required
+def informations():
+    my_team = request.form.get('team1')
+    opponent_team = request.form.get('team2')
+    return jsonify(markov_service.informations(my_team, opponent_team))
+
+@app.route('/markov/probability-matrix', methods=['POST'])
+@login_required
+def probability_matrix():
+    my_team = request.form.get('team1')
+    opponent_team = request.form.get('team2')
+    last_result = str(request.form.get('lastResult'))
+    power = int(request.form.get('power'))
+    small_matrix = markov_service.markov_alg(my_team, opponent_team, last_result, power).tolist()
+    markov_dictionary = { 'result_matrix': small_matrix }
+    return markov_dictionary
+
+@app.route('/markov/matrix', methods=['POST'])
+@login_required
+def markov_matrix():
+    my_team = request.form.get('team1')
+    opponent_team = request.form.get('team2')
+    print('323' + str(my_team)+"asdf")
+    big_matrix = markov_service.markov_matrix(my_team, opponent_team).tolist()
+    print(big_matrix)
+    markov_dictionary = { 'no_training_result': big_matrix}
+    return markov_dictionary
+
+
+
+
+# Naive Bayes Classifier
+
+@app.route('/bayes/calculate', methods=['POST'])
+@login_required
+def bayes_calculator():
+    my_team = request.form.get('team1')
+    opponent_team = request.form.get('team2')
+    bayes_dictionary = { 'bayes': naive_service.calculate(my_team, opponent_team) }
+    return bayes_dictionary
+
+
+
+
+
+# Linear Regression Algorithm
 
 
 class LinearRegressionController(Resource):
