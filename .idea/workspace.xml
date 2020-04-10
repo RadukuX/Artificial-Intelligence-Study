@@ -3,17 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9abe9c-796c-4169-9372-ae98773c9f04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/algorithms/linear_reg_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/algorithms/linear_reg_alg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/algorithms/markov_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/algorithms/markov_alg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/controller/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/controller/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/repository/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/repository/team_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/team_repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/services/markov_alg_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/services/markov_alg_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/services/naive_bayes_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/services/naive_bayes_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/services/team_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/services/team_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/static/scripts/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/static/scripts/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/static/scripts/teams.js" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/static/scripts/teams.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/static/prediction.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/static/prediction.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/static/scripts/prediction.js" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/static/scripts/prediction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/test.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/templates/prediction.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/prediction.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +63,8 @@
       <recent name="D:\Artificial Intelligence Study\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.markov_alg">
-    <configuration name="linear_reg_alg_service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.linear_reg_alg">
+    <configuration name="k_nn_alg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Artificial Intelligence Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,11 +72,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/services" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/services/linear_reg_alg_service.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="linear_reg_alg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Artificial Intelligence Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/algorithms" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/algorithms/linear_reg_alg.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -105,6 +127,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="naive_bayes_service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Artificial Intelligence Study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/services/naive_bayes_service.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="team_repository" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Artificial Intelligence Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,62 +169,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="user_repository" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Artificial Intelligence Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/repository" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/repository/user_repository.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="user_service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Artificial Intelligence Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/services" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/services/user_service.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.linear_reg_alg_service" />
-      <item itemvalue="Python.team_repository" />
-      <item itemvalue="Python.user_repository" />
-      <item itemvalue="Python.user_service" />
       <item itemvalue="Python.markov_alg" />
+      <item itemvalue="Python.team_repository" />
+      <item itemvalue="Python.naive_bayes_service" />
+      <item itemvalue="Python.linear_reg_alg" />
+      <item itemvalue="Python.k_nn_alg" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.linear_reg_alg" />
+        <item itemvalue="Python.k_nn_alg" />
+        <item itemvalue="Python.naive_bayes_service" />
         <item itemvalue="Python.markov_alg" />
         <item itemvalue="Python.team_repository" />
-        <item itemvalue="Python.user_service" />
-        <item itemvalue="Python.user_repository" />
-        <item itemvalue="Python.linear_reg_alg_service" />
       </list>
     </recent_temporary>
   </component>
@@ -215,46 +216,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="858" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584467913003" />
-    <state width="936" height="275" key="GridCell.Tab.0.bottom" timestamp="1586384182296">
+    <state width="1899" height="277" key="GridCell.Tab.0.bottom" timestamp="1586521741403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586384182296" />
-    <state width="936" height="275" key="GridCell.Tab.0.center" timestamp="1586384182296">
+    <state width="1899" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586521741403" />
+    <state width="1899" height="277" key="GridCell.Tab.0.center" timestamp="1586521741403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586384182296" />
-    <state width="936" height="275" key="GridCell.Tab.0.left" timestamp="1586384182295">
+    <state width="1899" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586521741403" />
+    <state width="1899" height="277" key="GridCell.Tab.0.left" timestamp="1586521741402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586384182295" />
-    <state width="936" height="275" key="GridCell.Tab.0.right" timestamp="1586384182296">
+    <state width="1899" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586521741402" />
+    <state width="1899" height="277" key="GridCell.Tab.0.right" timestamp="1586521741403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586384182296" />
-    <state width="936" height="344" key="GridCell.Tab.1.bottom" timestamp="1584644111348">
+    <state width="1899" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586521741403" />
+    <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1586476763185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584644111348" />
-    <state width="936" height="344" key="GridCell.Tab.1.center" timestamp="1584644111348">
+    <state width="1899" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586476763185" />
+    <state width="1899" height="344" key="GridCell.Tab.1.center" timestamp="1586476763185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584644111348" />
-    <state width="936" height="344" key="GridCell.Tab.1.left" timestamp="1584644111348">
+    <state width="1899" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586476763185" />
+    <state width="1899" height="344" key="GridCell.Tab.1.left" timestamp="1586476763184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584644111348" />
-    <state width="936" height="344" key="GridCell.Tab.1.right" timestamp="1584644111348">
+    <state width="1899" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586476763184" />
+    <state width="1899" height="344" key="GridCell.Tab.1.right" timestamp="1586476763185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584644111348" />
+    <state width="1899" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586476763185" />
     <state x="739" y="158" key="SettingsEditor" timestamp="1583338696151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="158" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583338696151" />
-    <state x="496" y="344" width="609" height="339" key="com.intellij.ide.util.TipDialog" timestamp="1586383947793">
+    <state x="496" y="344" width="609" height="339" key="com.intellij.ide.util.TipDialog" timestamp="1586519059753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="496" y="344" width="609" height="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586383947793" />
+    <state x="496" y="344" width="609" height="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586519059753" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582158934417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

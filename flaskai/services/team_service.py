@@ -21,3 +21,6 @@ class TeamService:
     def get_team_live(self, team_name, opponent_team_name):
         team_id = self.team_dictionary_pl[opponent_team_name]
         return self.team_repo.get_team_live(team_name, team_id)
+    
+    def get_team_b(self, my_team):
+        return self.team_repo.get_team_b(my_team)

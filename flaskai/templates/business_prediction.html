@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h1 class="title-business">Predictions for managers</h1>
+    <h3 class="title-business">Your team:</h3>
+    <div  id="team-b"></div>
+    
+    <div class="row">
+        <div class="md-form active-cyan active-cyan-2 mb-0 mt-2 ml-3 column">
+            <input id="search-team-b" class="form-control" type="text" placeholder="Search team" aria-label="Search opponent" style="width: 300px;">
+        </div> 
+    </div>
+
+    <form style="color: white;">
+        <div class="form-row">
+            <div class="form-group col-sm-6">
+                <label for="investments">Investments</label>
+                <input type="number" step="1000" class="form-control" id="investments" placeholder="Investments">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="med_age">Medium Age</label>
+                <input type="number" step="0.10" class="form-control" id="med_age" placeholder="Medium age">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-sm-6">
+                <label for="wins">Wins</label>
+                <input type="number" class="form-control" id="wins" placeholder="Equals">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="equals">Equals</label>
+                <input type="number" class="form-control" id="equals" placeholder="Equals">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="defeats">Defeats</label>
+                <input type="number" class="form-control" id="defeats" placeholder="Defeats">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="goals">Goals</label>
+                <input type="number" class="form-control" id="goals" placeholder="Goals">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column"> 
+                <button id="knn_button" class="btn btn-primary mt-2 ml-3" > K-NNeighbor </button>
+            </div>
+            <div class="column">
+                <button id="linear_button"  class="btn btn-primary mt-2 ml-2" > Linear Regression </button>
+            </div>
+        </div>
+      </form>
+
+    <div class="row title-business" >
+        <div class="column" id="linear_info"></div>
+        <div class="column" id="knn_info"></div>
+    </div>
+
+{% endblock content %}

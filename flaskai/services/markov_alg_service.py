@@ -14,6 +14,8 @@ class MarkovService:
         :returns wins, equals, defeats and the number of all the games 
     '''
     def informations(self, my_team, oponent_team):
+        print(my_team)
+        print(oponent_team)
         team_id = self.team_dictionary_pl.get(my_team)
         return self.markov.informations(team_id, oponent_team)
 
@@ -21,6 +23,8 @@ class MarkovService:
         :returns the probability matrix
     '''
     def markov_alg(self, my_team, oponent_team, result, power):
+        print(my_team)
+        print(oponent_team)
         team_id = self.team_dictionary_pl.get(my_team)
         return self.markov.markov(team_id, oponent_team, result, power)
 
@@ -29,6 +33,4 @@ class MarkovService:
     '''
     def markov_matrix(self, my_team, oponent_team):
         team_id = self.team_dictionary_pl.get(my_team)
-        print("asd "+str(team_id)+"das")
-        print(oponent_team)
         return self.markov.markov_matrix(team_id, oponent_team)

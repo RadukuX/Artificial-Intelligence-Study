@@ -43,4 +43,16 @@ class TeamRepository:
             cursor = conn.cursor()
             cursor.execute(sql, [ '%' + team_name + '%', team_id])
             nr_of_opponents = cursor.fetchall()
+            cursor.close()
             return nr_of_opponents
+
+    def get_team_b(self, my_team):
+        conn = DbConnection().create_connection(DbConnection.database)
+        sql = ''' SELECT DISTINCT name FROM team WHERE name LIKE ? LIMIT 1'''
+        with conn:
+            cursor = conn.cursor()
+            cursor.execute(sql, ['%' + my_team + '%'])
+            my_team = cursor.fetchall()
+            cursor.close()
+            print(my_team)
+            return my_team

@@ -9,12 +9,14 @@ from flaskai.services.team_service import TeamService
 import json
 from flaskai.services.markov_alg_service import MarkovService
 from flaskai.services.naive_bayes_service import NaiveBayesService
+from flaskai.services.k_nn_alg_service import KNearestNeighbors
 
 user_service = UserService()
 linear_regression_service = LinearRegService()
 team_service = TeamService()
 markov_service = MarkovService()
 naive_service = NaiveBayesService()
+knn_service = KNearestNeighbors()
 
 
 @app.route('/home')
@@ -22,6 +24,10 @@ naive_service = NaiveBayesService()
 def home():
     return render_template('home.html')
 
+@app.route('/business-prediction')
+@login_required
+def business_prediction():
+    return render_template('business_prediction.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():   
@@ -113,6 +119,13 @@ def search_team_live():
     print(team_id)
     return jsonify(team_service.get_team_live(opponent, team_id))
 
+@app.route('/livesearch-business', methods=['POST'])
+@login_required
+def search_team_b():
+    my_team = request.form.get('myTeam')
+    print(my_team)
+    return jsonify(team_service.get_team_b(my_team))
+
 
 # Algorithm routes
 
@@ -133,6 +146,7 @@ def probability_matrix():
     power = int(request.form.get('power'))
     small_matrix = markov_service.markov_alg(my_team, opponent_team, last_result, power).tolist()
     markov_dictionary = { 'result_matrix': small_matrix }
+    print(markov_dictionary)
     return markov_dictionary
 
 @app.route('/markov/matrix', methods=['POST'])
@@ -144,6 +158,7 @@ def markov_matrix():
     big_matrix = markov_service.markov_matrix(my_team, opponent_team).tolist()
     print(big_matrix)
     markov_dictionary = { 'no_training_result': big_matrix}
+    print(markov_dictionary)
     return markov_dictionary
 
 
@@ -164,6 +179,30 @@ def bayes_calculator():
 
 
 # Linear Regression Algorithm
+
+
+
+@app.route('/knn', methods=['POST'])
+@login_required
+def KNN():
+    investments = int(request.form.get('investments'))
+    med_age = float(request.form.get('medAge'))
+    wins = int(request.form.get('wins'))
+    equals = int(request.form.get('equals'))
+    defeats = int(request.form.get('defeats'))
+    goals = int(request.form.get('goals'))
+    return jsonify(knn_service.knn(investments, med_age, wins, equals, defeats, goals))
+
+@app.route('/linear', methods=['POST'])
+@login_required
+def linear_regression():
+    investments = int(request.form.get('investments'))
+    med_age = float(request.form.get('medAge'))
+    wins = int(request.form.get('wins'))
+    equals = int(request.form.get('equals'))
+    defeats = int(request.form.get('defeats'))
+    goals = int(request.form.get('goals'))
+    return linear_regression_service.lin_get_multiple_var(investments, med_age, wins, equals, defeats, goals)
 
 
 class LinearRegressionController(Resource):

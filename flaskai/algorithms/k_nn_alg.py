@@ -22,3 +22,6 @@ class KNearestNeighbors:
         prediction = np.array([investments, medium_age, wins, equals, defeats, goals])
         result = clf.predict([prediction])
         return [int(result), accuarcy]
+
+l= KNearestNeighbors()
+print(l.knn(30000, 21, 19, 12, 13, 4))

@@ -13,13 +13,20 @@
         </div> 
         <div class="column"> 
             <button id="markov_button" class="btn btn-primary mt-2 ml-2" > Markov </button>
-            <button id="bayes_button" onclick="bayes()" class="btn btn-primary mt-2 ml-2" > Bayes </button>
+            <button id="bayes_button"  class="btn btn-primary mt-2 ml-2" > Bayes </button>
         </div>
     </div>
 
-    <div id="options" class="row">
-        <div id="markov_chains_option" class="column" style="margin-top: 100px"></div>
-        <div id="bayes_clasifier_option" class="column"></div>
+    <div id="options" class="text-in-prediction">
+        <div id="informations" class="space-between-infos"></div>
+        <div id="algorithms" class="row">
+            <div id="markov_chains_option" class="column space-between-infos" ></div>
+            <div id="bayes_clasifier_option" class="column space-between-infos"></div>
+        </div>
+        <div id="markov_informations" class="space-between-infos"> </div>
+        <div id="markov_table" class="space-between-infos"> </div>
     </div>
+
+    
 
 {% endblock content %}

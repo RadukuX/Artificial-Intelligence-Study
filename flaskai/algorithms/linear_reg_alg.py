@@ -40,3 +40,5 @@ class LinearRegressionAlg:
         root.mainloop()
 
 
+l = LinearRegressionAlg()
+print(l.lin_get_multiple_var(30000, 21, 19, 12, 13, 4))

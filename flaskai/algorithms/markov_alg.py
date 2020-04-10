@@ -56,7 +56,11 @@ class MarkovAlg:
 
     def markov_matrix(self, team_id, oponent):
         arr = []
+        proc_of_wins = 0
+        proc_of_equals = 0
+        proc_of_defeats = 0
         dicty = self.get_chains(team_id, oponent)
+        print(dicty)
         for key in dicty:
             nr_of_wins = 0
             nr_of_equals = 0
@@ -70,17 +74,12 @@ class MarkovAlg:
                     nr_of_defeats = nr_of_defeats + 1
                 elif elem == 'e':
                     nr_of_equals = nr_of_equals + 1
-            if lg == 0:
-                lg = 1
                 proc_of_wins = (nr_of_wins / lg)
                 proc_of_equals = (nr_of_equals / lg)
                 proc_of_defeats = (nr_of_defeats / lg)
-            else:
-                proc_of_wins = (nr_of_wins / lg)
-                proc_of_equals = (nr_of_equals / lg)
-                proc_of_defeats = (nr_of_defeats / lg)
-            list_of_proc = [round(proc_of_wins, 2), round(proc_of_equals, 2), round(proc_of_defeats, 2)]
+            list_of_proc = [round(proc_of_wins, 5), round(proc_of_equals, 5), round(proc_of_defeats, 5)]
             arr.append(list_of_proc)
+            print('lista'+ str(list_of_proc))
         return np.asmatrix(arr).transpose()
 
     def first_state_matrix(self, the_result):
@@ -117,15 +116,6 @@ class MarkovAlg:
 
 
 m = MarkovAlg()
-print('Markov matrix')
-print(m.markov_matrix(3, 'West Bromwich Albion'))
-print("first state matrix")
-print(m.first_state_matrix('v'))
-print("markov ")
-print(m.markov(9, 'Scunthorpe United', 'v', 100))
-print("informations")
-print(m.informations(1, 'West Ham United'))
-print("calculate percentage")
-print(m.calculate_percentage(1, 'West Ham United'))
-print("chains")
-print(m.get_chains(1, 'West Ham United'))
+
+print(m.markov(2,'West Ham United', 'v', 10000000))
+print(m.markov(2,'Chelsea FC', 'v', 1000000))
