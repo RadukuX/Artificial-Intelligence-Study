@@ -39,6 +39,3 @@ class LinearRegressionAlg:
         ax1.set_title(variable + ' - Place')
         root.mainloop()
 
-
-l = LinearRegressionAlg()
-print(l.lin_get_multiple_var(30000, 21, 19, 12, 13, 4))

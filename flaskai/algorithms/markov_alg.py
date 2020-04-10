@@ -113,9 +113,3 @@ class MarkovAlg:
         raised_matrix = np.linalg.matrix_power(self.markov_matrix(team_id, oponent), power)
         first_matrix = self.first_state_matrix(result)
         return np.matmul(raised_matrix, first_matrix)
-
-
-m = MarkovAlg()
-
-print(m.markov(2,'West Ham United', 'v', 10000000))
-print(m.markov(2,'Chelsea FC', 'v', 1000000))
