@@ -13,7 +13,7 @@ class PremierLeague(enum.Enum):
     leicester_info = 'Leicester City Results.xlsx'
     liverpool_info = 'Liverpool Results.xlsx'
     manchester_city_info = 'Manchester City Results.xlsx'
-    manchester_utd_info = 'Manchester United Results.xlsx'
+    manchester_united_info = 'Manchester United Results.xlsx'
     newcastle_info = 'Newcastle United Results.xlsx'
     norwich_info = 'Norwich Results.xlsx'
     sheffield_info = 'Sheffield United Results.xlsx'

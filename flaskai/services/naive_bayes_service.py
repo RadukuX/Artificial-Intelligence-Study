@@ -16,4 +16,4 @@ class NaiveBayesService:
 
 
 n = NaiveBayesService()
-print(n.calculate('Aston-Villa', 'Liverpool FC'))
+print(n.calculate('Chelsea', 'Liverpool FC'))

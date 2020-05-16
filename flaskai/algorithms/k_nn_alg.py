@@ -24,4 +24,4 @@ class KNearestNeighbors:
         return [int(result), accuarcy]
 
 l= KNearestNeighbors()
-print(l.knn(30000, 21, 19, 12, 13, 4))
+print(l.knn(46000000, 21.4, 30, 8, 10, 57))

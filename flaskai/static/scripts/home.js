@@ -5,14 +5,13 @@ $(document).ready(function(){
         success: function(response){
             console.log(response.teams)
             count = 1
+            console.log(response.teams)
             for(let team of response.teams){
                 var result = $('<div id=team' + count + ' class="team-name item-hover" />').append(team)
                 $('#teams').append(result).html()
                 var flagId = team.toLowerCase().replace(" ", "-")
                 var flagId2 = team.replace(" ", "-")
                 var photoId = "option-image-" + flagId
-                console.log("Flag id = " + flagId)
-                console.log(photoId)
                 var photo = $('<div id='+ flagId2 +' onclick="predictionTitle(id)" onmouseover="showResults(this)" class="' + photoId + ' item-hover" />')
                 $('#team' + count).append(photo).html
                 //var predictionButton = $('<button style="display: flex; align-items: center, justify-content:center, margin-bottom:100px">Do a prediction</button>')
@@ -27,7 +26,6 @@ $(document).ready(function(){
 })
 
 function showResults(id){
-
     teamName = id.id
     event.preventDefault()
     event.stopPropagation()

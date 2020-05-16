@@ -50,6 +50,7 @@ def login():
             return redirect(url_for('pick'))
     form = LoginForm()
     if form.validate_on_submit():
+        print(user_service.login_user(form.email.data, form.password.data)[1])
         if user_service.login_user(form.email.data, form.password.data)[1] is True:
             user = user_service.login_user(form.email.data, form.password.data)[0]
             login_user(user, remember=form.remember_me.data)
@@ -93,6 +94,7 @@ def logout():
 def get_your_teams():
     team_list = user_service.get_your_teams(current_user.email)
     json_team_list = {'teams':team_list}
+    print("this is the list" + str(json_team_list))
     return json_team_list
 
 @app.route('/get-info/<team_name>', methods=['GET'])

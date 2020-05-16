@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.figure as plt
+import matplotlib.pyplot as plt1
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from sklearn import linear_model
 import math
@@ -12,12 +13,18 @@ class LinearRegressionAlg:
     df = pd.read_excel("D:/Artificial Intelligence Study/flaskai/excel_data/extra_data/Extra Data Liverpool.xlsx")
 
     # METHOD FOR TESTING PURPOSE
-    def __lin_reg_one_var(self, variable, column):
+    def lin_reg_one_var(self, variable, column):
         print(self.df)
         reg = linear_model.LinearRegression()
 
         reg.fit(self.df[[column]], self.df.Place)
         result = reg.predict([[variable]])
+        plt1.scatter(self.df[[column]], self.df.Place, color='black')
+        plt1.plot(self.df[[column]], self.df.Place, color='blue', linewidth=3)
+        plt1.xticks(())
+        plt1.yticks(())
+        plt1.show()
+
         return result
 
     def lin_get_multiple_var(self, investments, med_age, wins, equals, defeats, goals):
@@ -39,3 +46,6 @@ class LinearRegressionAlg:
         ax1.set_title(variable + ' - Place')
         root.mainloop()
 
+
+l = LinearRegressionAlg()
+print(l.lin_get_multiple_var(46000000, 21.4, 30, 8, 10, 57))

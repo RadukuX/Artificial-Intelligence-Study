@@ -7,7 +7,7 @@ class UserRepository:
 
     team_dictionary_pl = {'arsenal': 1, 'aston_villa': 2, 'bournemouth': 3, 'brighton': 4, 'burnley': 5, 'chelsea': 6,
                           'crystal_palace': 7, 'everton': 8, 'leicester': 9, 'liverpool': 10, 'manchester_city': 11,
-                          'manchester_utd': 12, 'newcastle': 13, 'norwich': 14, 'sheffield': 15, 'southampton': 16,
+                          'manchester_united': 12, 'newcastle': 13, 'norwich': 14, 'sheffield': 15, 'southampton': 16,
                           'tottenham': 17, 'watford': 18, 'west_ham': 19, 'wolves': 20}
 
 
@@ -31,12 +31,14 @@ class UserRepository:
             cursor.execute(sql, [email])
             cursor_fetch = cursor.fetchall()
             cursor.close()
-            return cursor_fetch[0][0]
+            return cursor_fetch
 
     def login_user(self, email, password):
         bcrypt = Bcrypt()
         user = User.query.filter_by(email=email).first()
-        if bcrypt.check_password_hash(self.__get_hashed_password(email), password) is True:
+        if not self.__get_hashed_password(email):
+            return [user, False]
+        if bcrypt.check_password_hash(self.__get_hashed_password(email)[0][0], password) is True:
             conn = DbConnection().create_connection(DbConnection.database)
             sql = ''' SELECT * FROM user WHERE email=? '''
             with conn:
@@ -89,5 +91,3 @@ class UserRepository:
             for team in team_list:
                 result.append(team[0])
             return result
-
-    

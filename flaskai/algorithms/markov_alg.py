@@ -38,6 +38,7 @@ class MarkovAlg:
         for t in self.repo.get_results_for_a_specific_team(team_id, oponent):
             result.append(t[5])
         reversed_result = result[::-1]
+        print(reversed_result)
         dictionary = {'v': '', 'e': '', 'd': ''}
         string1 = ''
         string2 = ''
@@ -60,7 +61,7 @@ class MarkovAlg:
         proc_of_equals = 0
         proc_of_defeats = 0
         dicty = self.get_chains(team_id, oponent)
-        print(dicty)
+
         for key in dicty:
             nr_of_wins = 0
             nr_of_equals = 0
@@ -113,3 +114,4 @@ class MarkovAlg:
         raised_matrix = np.linalg.matrix_power(self.markov_matrix(team_id, oponent), power)
         first_matrix = self.first_state_matrix(result)
         return np.matmul(raised_matrix, first_matrix)
+

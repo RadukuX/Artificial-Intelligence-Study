@@ -30,14 +30,12 @@ class NaiveBayesAlg:
         dataset = pd.DataFrame({'goals_given': raw_data[:, 0], 'goals_taken': raw_data[:, 1], 'result': raw_data[:, 2]})
         target = dataset.result
         inputs = dataset.drop('result', axis='columns')
-
         X_train, X_test, y_train, y_test = train_test_split(inputs, target, test_size=0.3)
         model = MultinomialNB()
         model.fit(X_train, y_train)
-
         list_of_predictions = model.predict(X_test)
+        print(list_of_predictions)
         dictionary_of_predictions = dict(Counter(list_of_predictions))
-
         if dictionary_of_predictions.get(1) is None:
             nr_of_pred_wins = 0
         else:
@@ -54,7 +52,6 @@ class NaiveBayesAlg:
             nr_of_pred_defeats = int(str(dictionary_of_predictions.get(3)))
 
         total_of_games_predicted = nr_of_pred_wins + nr_of_pred_defeats + nr_of_pred_equals
-
         procent_of_wins = nr_of_pred_wins/total_of_games_predicted * 100
         procent_of_equals = nr_of_pred_equals/total_of_games_predicted * 100
         procent_of_defeats = nr_of_pred_defeats/total_of_games_predicted * 100
