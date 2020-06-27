@@ -15,5 +15,3 @@ class NaiveBayesService:
         return self.naive_bayes.calculate(str2.lower(), oponent)
 
 
-n = NaiveBayesService()
-print(n.calculate('Chelsea', 'Liverpool FC'))

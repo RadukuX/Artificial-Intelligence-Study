@@ -23,5 +23,5 @@ class KNearestNeighbors:
         result = clf.predict([prediction])
         return [int(result), accuarcy]
 
-l= KNearestNeighbors()
-print(l.knn(46000000, 21.4, 30, 8, 10, 57))
+#l= KNearestNeighbors()
+#print(l.knn(46000000, 21.4, 30, 8, 10, 57))

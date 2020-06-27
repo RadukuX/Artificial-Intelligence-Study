@@ -3,23 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9abe9c-796c-4169-9372-ae98773c9f04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/algorithms/linear_reg_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/algorithms/linear_reg_alg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/algorithms/markov_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/algorithms/markov_alg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/algorithms/naive_bayes_alg.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/algorithms/naive_bayes_alg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/controller/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/controller/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/csv_data/manchester_utd_info.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/enums/premierleagueenum.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/enums/premierleagueenum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/readexcelwritecsv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/repository/readexcelwritecsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/readexcelwritecsv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/repository/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/repository/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/repository/team_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/repository/team_repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/services/naive_bayes_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/services/naive_bayes_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskai/static/scripts/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/static/scripts/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/static/prediction.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/static/prediction.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/static/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/static/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/static/scripts/prediction.js" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/static/scripts/prediction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskai/templates/prediction.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/templates/prediction.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskai/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/flaskai/test.db" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,95 +24,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Artificial Intelligence Study" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskai/algorithms/naive_bayes_alg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskai/controller/routes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2771">
-              <caret line="174" column="17" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#77#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskai/services/naive_bayes_service.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskai/repository/team_repository.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskai/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flaskai/algorithms/markov_alg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1039">
-              <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskai/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,76 +36,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/flaskai/readexcelwritecsv.py" />
-        <option value="$PROJECT_DIR$/flaskai/repository/user_repository.py" />
-        <option value="$PROJECT_DIR$/flaskai/algorithms/linear_reg_alg.py" />
-        <option value="$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py" />
-        <option value="$PROJECT_DIR$/flaskai/repository/repository.py" />
-        <option value="$PROJECT_DIR$/flaskai/services/naive_bayes_service.py" />
-        <option value="$PROJECT_DIR$/flaskai/algorithms/naive_bayes_alg.py" />
-        <option value="$PROJECT_DIR$/flaskai/algorithms/markov_alg.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
   <component name="ProjectId" id="1XmuPV8OW6D00GvYtuBHv8f8JAa" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Artificial Intelligence Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artificial Intelligence Study" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artificial Intelligence Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artificial Intelligence Study" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artificial Intelligence Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artificial Intelligence Study" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskai" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artificial Intelligence Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artificial Intelligence Study" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskai" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artificial Intelligence Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artificial Intelligence Study" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskai" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Artificial Intelligence Study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Artificial Intelligence Study" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskai" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -224,20 +65,8 @@
       <recent name="D:\Artificial Intelligence Study\flaskai" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.markov_alg">
-    <configuration name="k_nn_alg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.repository">
+    <configuration name="readexcelwritecsv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Artificial Intelligence Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,11 +74,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/algorithms" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/repository" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/repository/readexcelwritecsv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -258,70 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="markov_alg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Artificial Intelligence Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/algorithms" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/algorithms/markov_alg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="naive_bayes_alg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Artificial Intelligence Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/algorithms" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/algorithms/naive_bayes_alg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="naive_bayes_service" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Artificial Intelligence Study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flaskai/services" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flaskai/services/naive_bayes_service.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="repository" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="repository" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Artificial Intelligence Study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -342,20 +108,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.k_nn_alg" />
-      <item itemvalue="Python.naive_bayes_alg" />
-      <item itemvalue="Python.repository" />
-      <item itemvalue="Python.naive_bayes_service" />
-      <item itemvalue="Python.markov_alg" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.markov_alg" />
-        <item itemvalue="Python.naive_bayes_alg" />
-        <item itemvalue="Python.naive_bayes_service" />
         <item itemvalue="Python.repository" />
-        <item itemvalue="Python.k_nn_alg" />
+        <item itemvalue="Python.readexcelwritecsv" />
       </list>
     </recent_temporary>
   </component>
@@ -372,89 +128,51 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27457264" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33479214" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582565656052">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593272134567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582565656052" />
-    <state x="689" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582735461075">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593272134567" />
+    <state x="245" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593272300775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582735461075" />
-    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1582158929327">
+    <state x="245" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593272300775" />
+    <state width="1899" height="344" key="GridCell.Tab.0.bottom" timestamp="1593277194444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582158929327" />
-    <state x="858" y="282" key="FileChooserDialogImpl" timestamp="1584467913003">
+    <state width="1899" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593277194444" />
+    <state width="1899" height="344" key="GridCell.Tab.0.center" timestamp="1593277194444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="858" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584467913003" />
-    <state width="1899" height="277" key="GridCell.Tab.0.bottom" timestamp="1586536828718">
+    <state width="1899" height="344" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593277194444" />
+    <state width="1899" height="344" key="GridCell.Tab.0.left" timestamp="1593277194443">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586536828718" />
-    <state width="1899" height="277" key="GridCell.Tab.0.center" timestamp="1586536828717">
+    <state width="1899" height="344" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593277194443" />
+    <state width="1899" height="344" key="GridCell.Tab.0.right" timestamp="1593277194444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586536828717" />
-    <state width="1899" height="277" key="GridCell.Tab.0.left" timestamp="1586536828717">
+    <state width="1899" height="344" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593277194444" />
+    <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1593277194444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586536828717" />
-    <state width="1899" height="277" key="GridCell.Tab.0.right" timestamp="1586536828718">
+    <state width="1899" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593277194444" />
+    <state width="1899" height="344" key="GridCell.Tab.1.center" timestamp="1593277194444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586536828717" />
-    <state width="1899" height="344" key="GridCell.Tab.1.bottom" timestamp="1586476763185">
+    <state width="1899" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593277194444" />
+    <state width="1899" height="344" key="GridCell.Tab.1.left" timestamp="1593277194444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586476763185" />
-    <state width="1899" height="344" key="GridCell.Tab.1.center" timestamp="1586476763185">
+    <state width="1899" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593277194444" />
+    <state width="1899" height="344" key="GridCell.Tab.1.right" timestamp="1593277194444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586476763185" />
-    <state width="1899" height="344" key="GridCell.Tab.1.left" timestamp="1586476763184">
+    <state width="1899" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593277194444" />
+    <state x="496" y="344" width="609" height="339" key="com.intellij.ide.util.TipDialog" timestamp="1593270795586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586476763184" />
-    <state width="1899" height="344" key="GridCell.Tab.1.right" timestamp="1586476763185">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586476763185" />
-    <state x="739" y="158" key="SettingsEditor" timestamp="1583338696151">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="739" y="158" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583338696151" />
-    <state x="496" y="344" width="609" height="339" key="com.intellij.ide.util.TipDialog" timestamp="1586519059753">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="496" y="344" width="609" height="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586519059753" />
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582158934417">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582158934417" />
+    <state x="496" y="344" width="609" height="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593270795586" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584892214167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -470,130 +188,5 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Anaconda/envs/tensorflow/Lib/site-packages/bcrypt/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/readexcelwritecsv.py" />
-    <entry file="file://$PROJECT_DIR$/flaskai/repository/user_repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/services/user_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/algorithms/linear_reg_alg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/services/team_service.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/repository/repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="209" column="44" lean-forward="true" selection-start-line="209" selection-start-column="44" selection-end-line="209" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/algorithms/naive_bayes_alg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/controller/routes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="174" column="17" selection-start-line="174" selection-start-column="17" selection-end-line="174" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/services/naive_bayes_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/repository/team_repository.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/algorithms/k_nn_alg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskai/algorithms/markov_alg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1039">
-          <caret line="119" column="30" selection-start-line="119" selection-start-column="30" selection-end-line="119" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

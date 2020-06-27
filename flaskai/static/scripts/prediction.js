@@ -24,6 +24,10 @@ $(document).ready(function(){
     })
 })
 
+var wins_pie = 0
+var defeats_pie = 0
+var equals_pie = 0
+
 $(document).ready(function(){
     $('#markov_button').click(function(event){
         var myTeam = $("#my_team").text().replace(" vs", "")
@@ -40,6 +44,9 @@ $(document).ready(function(){
                 totalDefeats = response[0].defeats
                 totalEquals = response[0].equals
                 totalGames = response[1]
+                wins_pie = totalWins
+                defeats_pie = totalDefeats
+                equals_pie = totalEquals
                 var nrWins = $('<a>Wins: ' + totalWins + ' </a>')
                 var nrEquals = $('<a>Equals: ' + totalEquals + ' </a>')
                 var nrDefeats = $('<a>Defeats:  ' + totalDefeats + ' </a>')
@@ -179,3 +186,42 @@ $('#bayes_button').click(function(event){
         }
      })
 })
+
+
+$('#markov_button').click(function(event){
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        function drawChart() {
+                event.preventDefault()
+                event.stopPropagation()
+                var data = google.visualization.arrayToDataTable([
+                    ['Matches', 'Match percentage'],
+                    ['Wins',     wins_pie],
+                    ['Losses',      defeats_pie],
+                    ['Equals',  equals_pie]
+                ]);
+        
+                var options = {
+                    title: 'Statistic WLE',
+                    backgroundColor: 'transparent',
+                    'width':500,
+                    'height':500,
+                    colors: ['green','red', 'yellow'],
+                    'font-color': 'white',
+                    pieSliceTextStyle: {
+                        color: 'black'
+                    },
+                    titleTextStyle: {
+                        color: 'white'
+                    },
+                    legendTextStyle: {
+                        color:'white'
+                    },
+                };
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                chart.draw(data, options);
+            }
+        })
+
+

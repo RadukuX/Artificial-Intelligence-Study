@@ -6,12 +6,13 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from sklearn import linear_model
 import math
 import tkinter as tk
+from flaskai.repository.repository import Repository
 
 
 class LinearRegressionAlg:
 
     df = pd.read_excel("D:/Artificial Intelligence Study/flaskai/excel_data/extra_data/Extra Data Liverpool.xlsx")
-
+    repo = Repository()
     # METHOD FOR TESTING PURPOSE
     def lin_reg_one_var(self, variable, column):
         print(self.df)
@@ -47,5 +48,3 @@ class LinearRegressionAlg:
         root.mainloop()
 
 
-l = LinearRegressionAlg()
-print(l.lin_get_multiple_var(46000000, 21.4, 30, 8, 10, 57))

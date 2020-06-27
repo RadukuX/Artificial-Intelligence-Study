@@ -12,6 +12,8 @@ class Repository:
                           'manchester_united': 12, 'newcastle': 13, 'norwich': 14, 'sheffield': 15, 'southampton': 16,
                           'tottenham': 17, 'watford': 18, 'west_ham': 19, 'wolves': 20}
 
+    help_dicty_pl = {"chelsea": 6, "liverpool": 10, "manchester_united": 12}
+
     def __read_from_csv(self, file_name):
         result_dict = {'Date': '', 'Time': '', 'Oponent': '', 'Score': '', 'Result': '', 'team_id': ''}
         result_list = []
@@ -92,9 +94,10 @@ class Repository:
     def load_extra_data(self):
         conn = DbConnection().create_connection(DbConnection.database)
         with conn:
-            for result in self.__read_from_extra_csv('liverpool'):
-                res = tuple(result.values())
-                self.create_extra_data(conn, res)
+            for team in self.help_dicty_pl:
+                for result in self.__read_from_extra_csv(team):
+                    res = tuple(result.values())
+                    self.create_extra_data(conn, res)
 
     # CALL ONLY IF NO DATA IN DATABASE
     def load_all_db(self):
@@ -234,4 +237,3 @@ class Repository:
                 score_result.append(li)
             cursor.close()
             return score_result
-

@@ -18,8 +18,9 @@ class TeamRepository:
                 wins = row[4]
                 draws = row[5]
                 defeats = row[6]
-                place = row[7]
-                info = [year, investment, age, wins, draws, defeats, place]
+                goals = row[7]
+                place = row[8]
+                info = [year, investment, age, wins, draws, defeats, goals, place]
                 season = 'season' + str(counter)
                 result[season] = info
                 counter = counter + 1

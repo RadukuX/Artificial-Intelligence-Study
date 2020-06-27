@@ -1,10 +1,9 @@
 from flaskai.repository.repository import Repository
-import numpy as np
+import numpy as np 
 from sklearn.model_selection import train_test_split
 import pandas as pd
 from sklearn.naive_bayes import GaussianNB, MultinomialNB, BernoulliNB
 from collections import Counter
-
 
 class NaiveBayesAlg:
 
@@ -26,15 +25,28 @@ class NaiveBayesAlg:
         return np.asarray(raw_data)
 
     def calculate(self, my_team, oponent):
+       
         raw_data = self.prepare_data(my_team, oponent)
+        print('raw data ' + str(len(raw_data)))
         dataset = pd.DataFrame({'goals_given': raw_data[:, 0], 'goals_taken': raw_data[:, 1], 'result': raw_data[:, 2]})
+        print(dataset)
         target = dataset.result
         inputs = dataset.drop('result', axis='columns')
-        X_train, X_test, y_train, y_test = train_test_split(inputs, target, test_size=0.3)
+
+        if(len(raw_data) is 1):
+            if(int(dataset.result) is 1):
+                return[100.0, 0.0, 0.0, 0.0]
+            elif(int(dataset.result) is 2):
+                return[0.0, 100.0, 0.0, 0.0]
+            elif(int(dataset.result) is 3):
+                return[0.0, 0.0, 100.0, 0.0]
+
+        X_train, X_test, y_train, y_test = train_test_split(inputs, target, test_size=0.3, train_size=0.7)
+        print(X_train)
         model = MultinomialNB()
         model.fit(X_train, y_train)
         list_of_predictions = model.predict(X_test)
-        print(list_of_predictions)
+        
         dictionary_of_predictions = dict(Counter(list_of_predictions))
         if dictionary_of_predictions.get(1) is None:
             nr_of_pred_wins = 0
@@ -58,4 +70,3 @@ class NaiveBayesAlg:
         accuarcy = model.score(X_test, y_test)
 
         return [procent_of_wins, procent_of_equals, procent_of_defeats, accuarcy]
-
